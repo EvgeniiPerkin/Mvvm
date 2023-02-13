@@ -1,0 +1,17 @@
+﻿<Application x:Class="Mvvm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:v="clr-namespace:Mvvm.Views"
+             xmlns:vm="clr-namespace:Mvvm.ViewModels">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:UserControl1ViewModel}">
+            <v:UserControl1 />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:UserControl2ViewModel}">
+            <v:UserControl2 />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:UserControl3ViewModel}">
+            <v:UserControl3 />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
